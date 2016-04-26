@@ -1,3 +1,5 @@
+require("date")
+
 def return_10()
   result = 10
   return result
@@ -56,7 +58,28 @@ def number_to_short_month_name(num_1)
     return "Sep"
   end
 end
-    
+
+def volume(num_1, num_2, num_3)
+  return num_1*num_2*num_3
+end
+
+def sphere(radius)
+  result = (1.33*3.14)*(radius**3)
+  return result.round(4)
+end
+
+def days_till_christmas(today, christmas)
+  today.parse (26/04/2016)
+  christmas.parse (25/12/2016)
+  result = christmas - today
+  return result
+end
+  
+
+
+
+
+
 
 
 
